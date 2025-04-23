@@ -87,7 +87,7 @@ public class simpleMovement : MonoBehaviour
     {
         if (bulletPrefab != null && firePoint != null)
         {
-            Vector3 spawnPosition = firePoint.position + firePoint.right * 0.2f; // offset bullet forward
+            Vector3 spawnPosition = firePoint.position + firePoint.right * 0.2f; // offset bullet forward to prevent physics affecting player
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
             // Ignore collision with the player 
