@@ -1,3 +1,4 @@
+using Pathfinding;
 using UnityEngine;
 
 public class CoffeeBullet : MonoBehaviour
@@ -18,6 +19,13 @@ public class CoffeeBullet : MonoBehaviour
         if (other.CompareTag("Wall"))
         {
             Destroy(gameObject);
+        }
+
+        if(other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject); // destroy enemy
+            Destroy(gameObject); // destroy bullet
+            Debug.Log("Customer got shot!");
         }
     }
 }
