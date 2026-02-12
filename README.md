@@ -1,4 +1,4 @@
-# Accessible Game Prototype (IN-PROGRESS)
+# Accessible Game Prototype 
 A proof-of-concept game demonstrating accessibility features for visually and hearing-impaired players.
 
 # Overview
